@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_height"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/img_food"
+        android:layout_width="@dimen/list_item_height"
+        android:layout_height="@dimen/list_item_height"
+        android:src="@drawable/ic_no_photo" />
+
+    <LinearLayout
+        android:id="@+id/tv_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/img_food"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/standard_spacing">
+
+        <TextView
+            android:id="@+id/tv_food_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@android:color/darker_gray"
+            tools:text="Fried chicken" />
+
+        <TextView
+            android:id="@+id/tv_food_price"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/darker_gray"
+            tools:text="2000" />
+    </LinearLayout>
+
+</RelativeLayout>

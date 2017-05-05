@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CatalogActivity">
+    tools:context=".activity.CatalogActivity">
 
     <ListView
         android:id="@+id/list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:drawSelectorOnTop="true"
+        android:padding="@dimen/standard_spacing" />
 
     <!-- Empty view for the list -->
     <RelativeLayout
@@ -43,5 +46,6 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_margin="@dimen/fab_margin"
-        android:src="@drawable/ic_add_food" />
+        android:src="@drawable/ic_add_food"
+        app:rippleColor="@color/colorPrimary" />
 </RelativeLayout>

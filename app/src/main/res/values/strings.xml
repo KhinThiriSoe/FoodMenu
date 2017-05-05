@@ -3,4 +3,21 @@
 
     //label for the empty view
     <string name="empty_food">Get started by adding food</string>
+
+    <string name="action_insert_dummy_data">Insert Dummy Data</string>
+    <string name="action_delete_all_entries">Delete All Foods</string>
+    <string name="action_setting">Setting</string>
+    <string name="food_name">Name</string>
+    <string name="hint_food_name">Fried Chicken</string>
+    <string name="food_type">Type</string>
+
+    <string name="main_food">Main Food</string>
+    <string name="soft_drink">Soft Drink</string>
+    <string name="snack_food">Snack</string>
+    <string name="food_price">Price</string>
+    <string name="hint_food_price">2000 Ks</string>
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+    <string name="editor_activity_title_add_food">Add Food</string>
+    <string name="editor_activity_title_edit_food">Edit Food</string>
 </resources>
