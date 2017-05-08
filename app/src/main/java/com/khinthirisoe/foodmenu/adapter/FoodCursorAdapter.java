@@ -37,11 +37,13 @@ public class FoodCursorAdapter extends CursorAdapter {
 
         int nameColumnIndex = cursor.getColumnIndexOrThrow(FoodEntry.COLUMN_FOOD_NAME);
         int priceColumnIndex = cursor.getColumnIndexOrThrow(FoodEntry.COLUMN_FOOD_PRICE);
+        int photoColumnIndex = cursor.getColumnIndexOrThrow(FoodEntry.COLUMN_FOOD_PHOTO);
 
         String foodName = cursor.getString(nameColumnIndex);
         String foodPrice = cursor.getString(priceColumnIndex);
+        String photo = cursor.getString(photoColumnIndex);
 
-        imgFood.setImageBitmap(BitmapUtils.getImage(cursor.getBlob(cursor.getColumnIndexOrThrow(FoodEntry.COLUMN_FOOD_PHOTO))));
+        imgFood.setImageBitmap(BitmapUtils.decodeBase64(photo));
         txtFoodName.setText(foodName);
         txtFoodPrice.setText(foodPrice);
     }

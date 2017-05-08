@@ -16,16 +16,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.EditorActivity"
-            android:parentActivityName=".activity.CatalogActivity" >
-        <meta-data
+        <activity
+            android:name=".activity.EditorActivity"
+            android:parentActivityName=".activity.CatalogActivity">
+            <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activity.CatalogActivity" />
-        </activity>'
+        </activity>
+        '
         <provider
             android:name=".data.FoodProvider"
             android:authorities="com.khinthirisoe.foodmenu"
             android:exported="false" />
+
+        <activity android:name=".SettingsActivity"></activity>
     </application>
 
 </manifest>

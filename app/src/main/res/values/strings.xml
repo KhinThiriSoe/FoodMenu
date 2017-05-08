@@ -20,4 +20,11 @@
     <string name="action_delete">Delete</string>
     <string name="editor_activity_title_add_food">Add Food</string>
     <string name="editor_activity_title_edit_food">Edit Food</string>
+
+    <string name="editor_insert_food_successful">Food saved</string>
+    <string name="editor_insert_food_failed">Error with saving food</string>
+    <string name="editor_update_food_failed">Update food failed</string>
+    <string name="editor_update_food_successful">Update food successful</string>
+    <string name="editor_delete_food_failed">Delete food failed</string>
+    <string name="editor_delete_food_successful">Delete food successful</string>
 </resources>

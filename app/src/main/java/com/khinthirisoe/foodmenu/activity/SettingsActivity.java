@@ -1,7 +1,9 @@
-ipackage com.khinthirisoe.foodmenu;
+package com.khinthirisoe.foodmenu.activity;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+
+import com.khinthirisoe.foodmenu.R;
 
 public class SettingsActivity extends AppCompatActivity {
 

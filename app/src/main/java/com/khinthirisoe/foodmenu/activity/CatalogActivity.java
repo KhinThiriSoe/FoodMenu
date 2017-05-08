@@ -19,6 +19,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.khinthirisoe.foodmenu.R;
 import com.khinthirisoe.foodmenu.adapter.FoodCursorAdapter;
@@ -63,7 +64,8 @@ public class CatalogActivity extends AppCompatActivity implements LoaderManager.
     @Override
     public Loader<Cursor> onCreateLoader(int id, Bundle args) {
         String[] projection = {FoodEntry._ID, FoodEntry.COLUMN_FOOD_NAME, FoodEntry.COLUMN_FOOD_PHOTO,
-                FoodEntry.COLUMN_FOOD_PRICE};
+                FoodEntry.COLUMN_FOOD_PRICE, FoodEntry.COLUMN_FOOD_TYPE};
+
         return new CursorLoader(this, FoodEntry.CONTENT_URI, projection, null, null, null);
     }
 
@@ -106,7 +108,11 @@ public class CatalogActivity extends AppCompatActivity implements LoaderManager.
         values.put(FoodEntry.COLUMN_FOOD_NAME, "Fried chicken");
         values.put(FoodEntry.COLUMN_FOOD_TYPE, FoodEntry.MAIN_FOOD_TYPE);
         Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.ic_no_photo);
-        values.put(FoodEntry.COLUMN_FOOD_PHOTO, BitmapUtils.getBytes(bitmap));
+        String photo = BitmapUtils.encodeToBase64(bitmap, Bitmap.CompressFormat.PNG, 100);
+        values.put(FoodEntry.COLUMN_FOOD_PHOTO, photo);
+
+        Toast.makeText(CatalogActivity.this, "photo " + photo, Toast.LENGTH_LONG).show();
+
         values.put(FoodEntry.COLUMN_FOOD_PRICE, "1500 Ks");
 
         getContentResolver().insert(FoodEntry.CONTENT_URI, values);

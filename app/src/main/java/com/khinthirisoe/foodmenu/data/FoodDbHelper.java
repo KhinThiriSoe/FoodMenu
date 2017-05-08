@@ -29,7 +29,7 @@ public class FoodDbHelper extends SQLiteOpenHelper {
                 + FoodEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
                 + FoodEntry.COLUMN_FOOD_NAME + " TEXT NOT NULL, "
                 + FoodEntry.COLUMN_FOOD_TYPE + " INTEGER NOT NULL DEFAULT 0, "
-                + FoodEntry.COLUMN_FOOD_PHOTO + " BLOB, "
+                + FoodEntry.COLUMN_FOOD_PHOTO + " TEXT, "
                 + FoodEntry.COLUMN_FOOD_PRICE + " TEXT NOT NULL);";
 
         db.execSQL(SQL_CREATE_FOODS_TABLE);
