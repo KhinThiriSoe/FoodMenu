@@ -4,27 +4,48 @@
     //label for the empty view
     <string name="empty_food">Get started by adding food</string>
 
+    //menu for catalog
     <string name="action_insert_dummy_data">Insert Dummy Data</string>
     <string name="action_delete_all_entries">Delete All Foods</string>
-    <string name="action_setting">Setting</string>
+    <string name="action_setting">Settings</string>
+
+    //editor activity
     <string name="food_name">Name</string>
     <string name="hint_food_name">Fried Chicken</string>
     <string name="food_type">Type</string>
+    <string name="food_price">Price</string>
+    <string name="hint_food_price">2000 Ks</string>
 
+    //spinnerType
     <string name="main_food">Main Food</string>
     <string name="soft_drink">Soft Drink</string>
     <string name="snack_food">Snack</string>
-    <string name="food_price">Price</string>
-    <string name="hint_food_price">2000 Ks</string>
+
+    //menu for editor
     <string name="action_save">Save</string>
     <string name="action_delete">Delete</string>
+
+    //toolbar tile in editor activity
     <string name="editor_activity_title_add_food">Add Food</string>
     <string name="editor_activity_title_edit_food">Edit Food</string>
 
+    //dialog
     <string name="editor_insert_food_successful">Food saved</string>
     <string name="editor_insert_food_failed">Error with saving food</string>
     <string name="editor_update_food_failed">Update food failed</string>
     <string name="editor_update_food_successful">Update food successful</string>
     <string name="editor_delete_food_failed">Delete food failed</string>
     <string name="editor_delete_food_successful">Delete food successful</string>
+
+    //settings
+    <string name="settings_title">Food Settings</string>
+    <string name="settings_filter_by_label">Filter By</string>
+    <string name="settings_filter_by_key" translatable="false">filter by</string>
+    <string name="settings_filter_by_default" translatable="false">@string/settings_filter_by_all_value</string>
+
+    <string name="all">All</string>
+    <string name="settings_filter_by_main_food_value">0</string>
+    <string name="settings_filter_by_soft_drink_value">1</string>
+    <string name="settings_filter_by_snack_value">2</string>
+    <string name="settings_filter_by_all_value">3</string>
 </resources>

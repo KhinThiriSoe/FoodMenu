@@ -148,11 +148,6 @@ public class FoodProvider extends ContentProvider {
             }
         }
 
-        if (values.containsKey(FoodEntry.COLUMN_FOOD_PHOTO)) {
-            String photo = values.getAsString(FoodEntry.COLUMN_FOOD_PRICE);
-
-        }
-
         if (values.size() == 0) {
             return 0;
         }

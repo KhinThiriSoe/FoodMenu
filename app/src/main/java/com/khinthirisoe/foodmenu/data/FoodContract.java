@@ -35,9 +35,9 @@ public class FoodContract {
 
         public final static String COLUMN_FOOD_PRICE = "price";
 
-        public static final int DRINK_TYPE = 0;
-        public static final int SNACK_TYPE = 1;
-        public static final int MAIN_FOOD_TYPE = 2;
+        public static final int MAIN_FOOD_TYPE = 0;
+        public static final int DRINK_TYPE = 1;
+        public static final int SNACK_TYPE = 2;
 
         public static boolean isValidFoodType(Integer type) {
 

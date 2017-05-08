@@ -6,4 +6,18 @@
         <item>@string/soft_drink</item>
         <item>@string/snack_food</item>
     </string-array>
+
+    <string-array name="settings_filter_by_labels">
+        <item>@string/main_food</item>
+        <item>@string/soft_drink</item>
+        <item>@string/snack_food</item>
+        <item>@string/all</item>
+    </string-array>
+
+    <string-array name="settings_filter_by_values">
+        <item>@string/settings_filter_by_main_food_value</item>
+        <item>@string/settings_filter_by_soft_drink_value</item>
+        <item>@string/settings_filter_by_snack_value</item>
+        <item>@string/settings_filter_by_all_value</item>
+    </string-array>
 </resources>
